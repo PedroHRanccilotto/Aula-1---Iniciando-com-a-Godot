@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c7hjnv0hwxon4" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/Viking/sprite-animation-jump-64x64-8f-sheet.png" id="5_wqsd8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vejd"]
-size = Vector2(89, 119)
+size = Vector2(89, 103)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ugk0l"]
 atlas = ExtResource("4_inrnk")
@@ -198,13 +198,13 @@ animations = [{
 script = ExtResource("1_g2brh")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1887187708]
-limit_left = -658
-limit_top = -287
-limit_right = 964
-limit_bottom = 409
+limit_left = -962
+limit_top = -745
+limit_right = 3620
+limit_bottom = 441
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=276283524]
-position = Vector2(35.5, -40.5)
+position = Vector2(35.5, -36.5)
 shape = SubResource("RectangleShape2D_4vejd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=415582210]
