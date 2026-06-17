@@ -50,7 +50,8 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.play("jump")
 	
 	move_and_slide()
-	
+func die():
+	get_tree().reload_current_scene()
 	#var speed = 200 (tipagem dinaminca)
 	#var speed: int = 200 (tipagem explicita)
 	#var speed := 200 (tipagem inferida pela Godot)

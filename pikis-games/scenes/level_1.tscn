@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cyeonfhhne88f" path="res://scenes/character_body_2d.tscn" id="1_014kd"]
 [ext_resource type="Texture2D" uid="uid://d0405d40q8ey1" path="res://imagens/transferir (9).jpg" id="1_rus8k"]
 [ext_resource type="Texture2D" uid="uid://n4cdiq2ayuqw" path="res://assets/kenney_platformer-art-deluxe/Base pack/Tiles/tiles_spritesheet.png" id="2_bswci"]
+[ext_resource type="PackedScene" uid="uid://dmwavdrxvkrfs" path="res://scenes/inimigo.tscn" id="4_5xbjy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rus8k"]
 texture = ExtResource("2_bswci")
@@ -5810,3 +5811,6 @@ shape = SubResource("WorldBoundaryShape2D_5xbjy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Baixo" unique_id=1588051703]
 shape = SubResource("WorldBoundaryShape2D_4nkto")
+
+[node name="Inimigo" parent="." unique_id=1571794086 instance=ExtResource("4_5xbjy")]
+position = Vector2(360, 267)

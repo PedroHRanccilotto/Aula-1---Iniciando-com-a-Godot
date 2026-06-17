@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cyeonfhhne88f"]
 
-[ext_resource type="Script" uid="uid://dogibgkh4uybh" path="res://scripts/character_body_2d.gd" id="1_g2brh"]
+[ext_resource type="Script" uid="uid://dogibgkh4uybh" path="res://scripts/player.gd" id="1_g2brh"]
 [ext_resource type="Texture2D" uid="uid://dt4qq6eg0r3kt" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/Viking/sprite-animation-walk-64x64-8f-sheet.png" id="4_4vejd"]
 [ext_resource type="Texture2D" uid="uid://1bdood13387j" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/Viking/sprite-animation-idle-64x64-8f-sheet.png" id="4_inrnk"]
 [ext_resource type="Texture2D" uid="uid://c7hjnv0hwxon4" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/Viking/sprite-animation-jump-64x64-8f-sheet.png" id="5_wqsd8"]
