@@ -1,7 +1,9 @@
 [gd_scene format=4 uid="uid://rgxpcl8qd1q1"]
 
 [ext_resource type="PackedScene" uid="uid://cyeonfhhne88f" path="res://scenes/character_body_2d.tscn" id="1_014kd"]
+[ext_resource type="PackedScene" uid="uid://bqjxaxctkq4bo" path="res://scenes/hud.tscn" id="1_e3sih"]
 [ext_resource type="Texture2D" uid="uid://d0405d40q8ey1" path="res://imagens/transferir (9).jpg" id="1_rus8k"]
+[ext_resource type="Script" uid="uid://btbu8dbs2k7ga" path="res://scripts/game_manager.gd" id="2_2y5yt"]
 [ext_resource type="Texture2D" uid="uid://n4cdiq2ayuqw" path="res://assets/Base pack/Tiles/tiles_spritesheet.png" id="2_bswci"]
 [ext_resource type="PackedScene" uid="uid://bvlrhiwfsaehw" path="res://scenes/moeda.tscn" id="3_4nkto"]
 [ext_resource type="Texture2D" uid="uid://bpgjt451jwpjx" path="res://assets/Base pack/sample.png" id="3_fcfvj"]
@@ -7467,6 +7469,11 @@ distance = -457.65067
 
 [node name="Level1" type="Node2D" unique_id=1267701657]
 
+[node name="hud" parent="." unique_id=2140467957 instance=ExtResource("1_e3sih")]
+
+[node name="GameManager" type="Node2D" parent="." unique_id=373678073]
+script = ExtResource("2_2y5yt")
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=359890148]
 offset_left = -971.0
 offset_top = -1711.0
@@ -7489,7 +7496,7 @@ tile_set = SubResource("TileSet_rus8k")
 tile_set = SubResource("TileSet_4vejd")
 
 [node name="Player" parent="." unique_id=1881155869 instance=ExtResource("1_014kd")]
-position = Vector2(1512, -311)
+position = Vector2(-551, 240)
 
 [node name="ParedeDireita" type="StaticBody2D" parent="." unique_id=734607604]
 
@@ -7541,3 +7548,18 @@ position = Vector2(1415, -580)
 
 [node name="Powerup_speed" parent="." unique_id=978997551 instance=ExtResource("7_pa8r4")]
 position = Vector2(1866, -413)
+
+[node name="Moeda8" parent="." unique_id=2119505386 instance=ExtResource("3_4nkto")]
+position = Vector2(1764, -755)
+
+[node name="Moeda9" parent="." unique_id=1063669946 instance=ExtResource("3_4nkto")]
+position = Vector2(1946, -907)
+
+[node name="Moeda10" parent="." unique_id=1465663511 instance=ExtResource("3_4nkto")]
+position = Vector2(2588, -1112)
+
+[node name="Moeda11" parent="." unique_id=1830357170 instance=ExtResource("3_4nkto")]
+position = Vector2(2640, -93)
+
+[node name="Powerup_speed2" parent="." unique_id=1549261117 instance=ExtResource("7_pa8r4")]
+position = Vector2(3216, 39)

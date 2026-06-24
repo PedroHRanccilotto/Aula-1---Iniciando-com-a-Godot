@@ -7,6 +7,8 @@ var SPEED = 350.0
 const JUMP_VELOCITY = -650.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+@onready var hud: CanvasLayer = $"../HUD"
+
 # velocidade durante o power-up
 const SPEED_BOOST = 400.0    
 # segundos de duração   
@@ -90,3 +92,12 @@ func _on_powerup_speed_speed_collected(body: Variant) -> void:
 		body.apply_speed_boost()
 		
 	# ... restante do código
+
+func die2():
+	tomar_dano(1)
+# função que recebe a quantidade de dano via parâmetro e aplica à vidas
+func tomar_dano(dano:int) -> void:
+	GameManager.vidas -= dano
+	if GameManager.vidas <= 0:
+		print("Game Over")
+	hud.atualizar_vidas()
