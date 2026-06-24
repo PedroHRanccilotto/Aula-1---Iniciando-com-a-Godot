@@ -23,7 +23,7 @@ animations = [{
 size = Vector2(51, 41)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4er16"]
-size = Vector2(60, 49)
+size = Vector2(57, 46)
 
 [node name="Inimigo" type="Node2D" unique_id=1571794086]
 
@@ -44,11 +44,11 @@ shape = SubResource("RectangleShape2D_ui621")
 target_position = Vector2(-18, 22)
 
 [node name="floorright" type="RayCast2D" parent="inimigo" unique_id=618746443]
-target_position = Vector2(17, 22)
+target_position = Vector2(18, 22)
 
 [node name="Killzone" parent="." unique_id=745945330 instance=ExtResource("3_21tsg")]
 position = Vector2(1, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=140944126]
-position = Vector2(0, -0.5)
+position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_4er16")

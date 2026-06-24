@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 80.0
 const GRAVITY = 800.0
+
 var direction = 1
 
 # Variáveis que referenciam os nós da cena
