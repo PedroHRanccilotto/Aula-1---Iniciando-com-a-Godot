@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://ftwdtftj5rpy"]
+
+[ext_resource type="Script" uid="uid://cc4jabwa6fqk5" path="res://scripts/menu_i.gd" id="1_1u8i4"]
+[ext_resource type="Texture2D" uid="uid://5y6wifapex63" path="res://imagens/FundoMenuInicial.jpg" id="2_sxmff"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ucxs8"]
+font_size = 48
+font_color = Color(0, 0, 0, 1)
+shadow_size = 8
+shadow_color = Color(0.75819176, 0.7581918, 0.75819165, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_836de"]
+
+[sub_resource type="FontVariation" id="FontVariation_16vwi"]
+base_font = SubResource("FontVariation_836de")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_espy4"]
+bg_color = Color(0.29954746, 0.29954746, 0.29954743, 1)
+border_width_left = 5
+border_width_right = 5
+border_color = Color(0.29803923, 0.29803923, 0.29803923, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a7r4i"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_xxvwd"]
+
+[node name="MenuI" type="Control" unique_id=572087153]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1u8i4")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=580607884]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_sxmff")
+expand_mode = 2
+
+[node name="TituloJogoLabel" type="Label" parent="." unique_id=541013016]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -195.0
+offset_top = 43.0
+offset_right = 195.0
+offset_bottom = 110.0
+grow_horizontal = 2
+text = "Viking Legends"
+label_settings = SubResource("LabelSettings_ucxs8")
+uppercase = true
+
+[node name="JogarButton" type="Button" parent="." unique_id=811115406]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.5
+offset_top = -26.5
+offset_right = 72.5
+offset_bottom = 26.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_16vwi")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_espy4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_a7r4i")
+theme_override_styles/hover = SubResource("StyleBoxLine_xxvwd")
+text = "Jogar"
+flat = true
+
+[connection signal="pressed" from="JogarButton" to="." method="_on_jogar_button_pressed"]
