@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cyeonfhhne88f"]
 
 [ext_resource type="Script" uid="uid://dogibgkh4uybh" path="res://scripts/player.gd" id="1_g2brh"]
-[ext_resource type="Texture2D" uid="uid://dt4qq6eg0r3kt" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/Viking/sprite-animation-walk-64x64-8f-sheet.png" id="4_4vejd"]
-[ext_resource type="Texture2D" uid="uid://1bdood13387j" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/Viking/sprite-animation-idle-64x64-8f-sheet.png" id="4_inrnk"]
-[ext_resource type="Texture2D" uid="uid://c7hjnv0hwxon4" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/Viking/sprite-animation-jump-64x64-8f-sheet.png" id="5_wqsd8"]
+[ext_resource type="Texture2D" uid="uid://dt4qq6eg0r3kt" path="res://assets/Base pack/Player/Viking/sprite-animation-walk-64x64-8f-sheet.png" id="4_4vejd"]
+[ext_resource type="Texture2D" uid="uid://1bdood13387j" path="res://assets/Base pack/Player/Viking/sprite-animation-idle-64x64-8f-sheet.png" id="4_inrnk"]
+[ext_resource type="Texture2D" uid="uid://c7hjnv0hwxon4" path="res://assets/Base pack/Player/Viking/sprite-animation-jump-64x64-8f-sheet.png" id="5_wqsd8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ugk0l"]
 atlas = ExtResource("4_inrnk")
@@ -128,7 +128,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mamov")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle",
 "speed": 8.0
 }, {
@@ -157,7 +157,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_y77s4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"jump",
 "speed": 8.0
 }, {
@@ -186,7 +186,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7pl6r")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 8.0
 }]
@@ -200,7 +200,7 @@ script = ExtResource("1_g2brh")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1887187708]
 limit_left = -962
-limit_top = -745
+limit_top = -1565
 limit_right = 3620
 limit_bottom = 441
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bvlrhiwfsaehw"]
 
-[ext_resource type="Texture2D" uid="uid://coqdndgd8xdtp" path="res://assets/kenney_platformer-art-deluxe/Base pack/Items/coinGold.png" id="1_3o5iq"]
+[ext_resource type="Texture2D" uid="uid://coqdndgd8xdtp" path="res://assets/Base pack/Items/coinGold.png" id="1_3o5iq"]
 [ext_resource type="Script" uid="uid://bylxihlogdded" path="res://scripts/Moeda.gd" id="1_qxuy4"]
 [ext_resource type="Texture2D" uid="uid://51u55el45pdl" path="res://assets/kenney-particle-pack-7e801dc538996622a91327bb1dd5879cf977aa09/addons/kenney_particle_pack/star_07.png" id="2_188lh"]
 

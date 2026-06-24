@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dmwavdrxvkrfs"]
+
+[ext_resource type="Script" uid="uid://baob3ny5xyosa" path="res://scripts/inimigo.gd" id="1_21tsg"]
+[ext_resource type="Texture2D" uid="uid://e0qok8c8o6ga" path="res://assets/kenney_platformer-art-deluxe/Extra animations and enemies/Enemy sprites/bee.png" id="1_61lki"]
+[ext_resource type="Texture2D" uid="uid://daf74mx0o8gwj" path="res://assets/kenney_platformer-art-deluxe/Extra animations and enemies/Enemy sprites/bee_fly.png" id="2_21tsg"]
+[ext_resource type="PackedScene" uid="uid://5j7ydbjixyel" path="res://scenes/killzone.tscn" id="3_21tsg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4er16"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_61lki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_21tsg")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ui621"]
+size = Vector2(51, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4er16"]
+size = Vector2(57, 46)
+
+[node name="Inimigo" type="Node2D" unique_id=1571794086]
+
+[node name="inimigo" type="CharacterBody2D" parent="." unique_id=189550235]
+script = ExtResource("1_21tsg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="inimigo" unique_id=337493252]
+sprite_frames = SubResource("SpriteFrames_4er16")
+animation = &"walk"
+autoplay = "walk"
+frame_progress = 0.5919319
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="inimigo" unique_id=1954595016]
+position = Vector2(1.5, -1.5)
+shape = SubResource("RectangleShape2D_ui621")
+
+[node name="floorleft" type="RayCast2D" parent="inimigo" unique_id=120950468]
+target_position = Vector2(-18, 22)
+
+[node name="floorright" type="RayCast2D" parent="inimigo" unique_id=618746443]
+target_position = Vector2(18, 22)
+
+[node name="Killzone" parent="." unique_id=745945330 instance=ExtResource("3_21tsg")]
+position = Vector2(1, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=140944126]
+position = Vector2(0.5, -1)
+shape = SubResource("RectangleShape2D_4er16")
