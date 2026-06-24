@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="PIKIS_GAMES"
-run/main_scene="uid://rgxpcl8qd1q1"
+run/main_scene="uid://ftwdtftj5rpy"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
