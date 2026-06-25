@@ -202,7 +202,7 @@ script = ExtResource("1_g2brh")
 limit_left = -962
 limit_top = -1565
 limit_right = 3620
-limit_bottom = 441
+limit_bottom = 1078
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=415582210]
 position = Vector2(33, -33)
